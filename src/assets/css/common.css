@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width: 1226px;
+    margin: auto;
+}
+
+.container::before{
+    content:'';
+    display: table;
+}
