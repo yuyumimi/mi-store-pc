@@ -37,8 +37,8 @@
       <div class="flex">
         <div class="left flex">
           <div class="logo-area flex">
-            <img src="img/mi-logo.png" alt="mi-logo" class="logo">
-            <img src="img/pclogoheisha.gif" alt="ads" class="ads">
+            <img src="../assets/img/mi-logo.png" alt="mi-logo" class="logo">
+            <img src="../assets/img/pclogoheisha.gif" alt="ads" class="ads">
           </div>
           <nav class="page-nav">
             <a href="#">小米手机</a>
@@ -92,13 +92,13 @@
             <li>话费充值</li>
           </ul>
           <a href="#">
-            <img src="img/xmad_15235208204944_xfguv.jpg" alt="广告图">
+            <img src="../assets/img/xmad_15235208204944_xfguv.jpg" alt="广告图">
           </a>
           <a href="#">
-            <img src="img\xmad_15211196852594_KeNuO.jpg" alt="广告图">
+            <img src="../assets/img\xmad_15211196852594_KeNuO.jpg" alt="广告图">
           </a>
           <a href="#">
-            <img src="img\df7c6d47-c09f-49d1-9a9f-df0d2294bec8.jpg" alt="广告图">
+            <img src="../assets/img\df7c6d47-c09f-49d1-9a9f-df0d2294bec8.jpg" alt="广告图">
           </a>
         </footer>
       </section>
@@ -181,7 +181,7 @@
           </h3>
           <div class="flex floor-body">
             <a href="#" class="left">
-              <img src="img/xmad_15242078029661_OTptI.jpg" alt="广告图">
+              <img src="../assets/img/xmad_15242078029661_OTptI.jpg" alt="广告图">
             </a>
             <ul class="right">
               <li class="floor-cell">
@@ -268,7 +268,7 @@
             </ul>
           </div>
           <a href="#" class="banner">
-            <img src="img/xmad_15239327613802_gcLZQ.jpg" alt="横幅广告">
+            <img src="../assets/img/xmad_15239327613802_gcLZQ.jpg" alt="横幅广告">
           </a>
         </section>
 
@@ -519,7 +519,7 @@
       <div class="container">
         <div class="flex">
           <div class="left flex">
-            <img src="img/mi-logo.png" alt="logo" class="logo">
+            <img src="../assets/img/mi-logo.png" alt="logo" class="logo">
             <div class="right">
               <ul class="sites flex">
                 <li>
@@ -575,19 +575,19 @@
           </div>
           <ul class="info-links">
             <a href="#">
-              <img src="img/truste.png" alt="图片">
+              <img src="../assets/img/truste.png" alt="图片">
             </a>
             <a href="#">
-              <img src="img/v-logo-2.png" alt="图片">
+              <img src="../assets/img/v-logo-2.png" alt="图片">
             </a>
             <a href="#">
-              <img src="img/v-logo-1.png" alt="图片">
+              <img src="../assets/img/v-logo-1.png" alt="图片">
             </a>
             <a href="#">
-              <img src="img/v-logo-3.png" alt="图片">
+              <img src="../assets/img/v-logo-3.png" alt="图片">
             </a>
             <a href="#">
-              <img src="img/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="图片">
+              <img src="../assets/img/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="图片">
             </a>
           </ul>
         </div>
