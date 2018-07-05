@@ -5,9 +5,7 @@
     <div class="container">
       <section id="section-one">
         <mi-carousel />
-        <!-- 站点导航 -->
-        <ul id="site-category" class="flex">
-        </ul>
+        <side-category />
 
         <footer class="flex">
           <ul class="bottom-left flex">
@@ -547,6 +545,7 @@ import "../assets/js/index.js"
 import MiBanner from "../components/mi-banner"
 import MiCarousel from "../components/mi-carousel"
 import PageHeader from "../components/page-header"
+import SideCategory from "../components/side-category"
 import TopNavBar from "../components/top-nav-bar"
 
 export default {
@@ -554,6 +553,7 @@ export default {
     MiCarousel,
     MiBanner,
     PageHeader,
+    SideCategory,
     TopNavBar
   }
 }

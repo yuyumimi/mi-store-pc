@@ -74,32 +74,7 @@ function getProducts(typeId = 1, limit = 10) {
 }
 
 // 站点导航
-const nav = {
-  $elem: null,
-  data: null,
-  init() {
-    this.$elem = $('#site-category')
-    $.ajax({ url: 'php/get_site_nav.php', dataType: 'json' })
-      .then(data => {
-        this.data = data.data
-        this.load()
-      },
-        error => {
-          // alert('网络故障，请检查')
-        }
-      )
-  },
-  load() {
-    const $nav1s = []
-    for (const nav1 of this.data) {
-      const $nav1 = $('<li class="flex">').html(`<span>${nav1.title}</span>`).append('<i class="icon-youjiantou1 iconfont"></i>')
-      $nav1s.push($nav1)
-    }
-    this.$elem.append($nav1s)
-  }
-}
 
-nav.init()
 
 
 
