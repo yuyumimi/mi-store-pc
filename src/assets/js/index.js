@@ -85,7 +85,7 @@ const nav = {
         this.load()
       },
         error => {
-          alert('网络故障，请检查')
+          // alert('网络故障，请检查')
         }
       )
   },
@@ -115,7 +115,7 @@ const carousel = {
         this.data.push(this.data[0])
         this.load()
       }, error => [
-        alert('网络故障，请检查')
+        // alert('网络故障，请检查')
       ])
     this.startInterval()
     this._bindEvents()
