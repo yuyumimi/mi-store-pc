@@ -186,3 +186,5 @@ function SHA1(msg) {
 
   return temp.toLowerCase()
 }
+
+export default SHA1
