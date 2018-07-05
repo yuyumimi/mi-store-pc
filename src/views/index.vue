@@ -620,6 +620,9 @@ import "../assets/css/common.css"
 import "../assets/css/reset.css"
 import "../assets/css/site_theme.css"
 
+import "../assets/js/jquery-3.3.1.min"
+import "../assets/js/index.js"
+
 export default {}
 </script>
 
