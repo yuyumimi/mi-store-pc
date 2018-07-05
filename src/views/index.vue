@@ -106,9 +106,7 @@
             </li>
           </a>
         </ul>
-        <a href="#" class="banner">
-          <img src="https://i1.mifile.cn/a4/xmad_15248128208806_fjRMy.jpg" alt="横幅广告">
-        </a>
+        <mi-banner imgUrl="https://i1.mifile.cn/a4/xmad_15248128208806_fjRMy.jpg"></mi-banner>
       </section>
     </div>
     <div id="floors" class="gray-bg">
@@ -208,9 +206,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="banner">
-            <img src="../assets/img/xmad_15239327613802_gcLZQ.jpg" alt="横幅广告">
-          </a>
+          <mi-banner :imgUrl="require('../assets/img/xmad_15239327613802_gcLZQ.jpg')" />
         </section>
 
         <section id="home-elec">
@@ -314,9 +310,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="banner">
-            <img src="https://i1.mifile.cn/a4/xmad_1523959475917_XyzOq.jpg" alt="横幅广告">
-          </a>
+          <mi-banner imgUrl="https://i1.mifile.cn/a4/xmad_1523959475917_XyzOq.jpg" />
         </section>
         <section id="related">
           <h3 class="flex">
@@ -564,11 +558,13 @@ import "../assets/css/site_theme.css"
 import "../assets/js/jquery-3.3.1.min"
 import "../assets/js/index.js"
 
-import TopNavBar from "../components/top-nav-bar"
+import MiBanner from "../components/mi-banner"
 import PageHeader from "../components/page-header"
+import TopNavBar from "../components/top-nav-bar"
 
 export default {
   components: {
+    MiBanner,
     PageHeader,
     TopNavBar
   }
@@ -583,11 +579,6 @@ export default {
 .page-nav a {
   margin-left: 15px;
   font-size: 16px;
-}
-
-.banner > img {
-  width: 100%;
-  margin: 40px auto;
 }
 
 /* section one */
