@@ -4,21 +4,7 @@
     <page-header />
     <div class="container">
       <section id="section-one">
-        <!-- carousel -->
-        <div class="carousel">
-          <div class="imgs">
-          </div>
-          <div class="controls">
-            <a href="#">
-              <i class="icon-fanhui left-arrow iconfont"></i>
-            </a>
-            <a href="#">
-              <i class="icon-gengduo right-arrow iconfont"></i>
-            </a>
-            <ul class="indicators flex">
-            </ul>
-          </div>
-        </div>
+        <mi-carousel />
         <!-- 站点导航 -->
         <ul id="site-category" class="flex">
         </ul>
@@ -559,11 +545,13 @@ import "../assets/js/jquery-3.3.1.min"
 import "../assets/js/index.js"
 
 import MiBanner from "../components/mi-banner"
+import MiCarousel from "../components/mi-carousel"
 import PageHeader from "../components/page-header"
 import TopNavBar from "../components/top-nav-bar"
 
 export default {
   components: {
+    MiCarousel,
     MiBanner,
     PageHeader,
     TopNavBar
@@ -585,62 +573,6 @@ export default {
 #section-one {
   position: relative;
   margin-top: 16px;
-}
-
-/* carousel */
-
-#section-one .carousel {
-  height: 460px;
-  overflow: hidden;
-  position: relative;
-}
-
-#section-one .carousel > .imgs {
-  position: absolute;
-}
-
-#section-one .carousel > .imgs img {
-  width: 1226px;
-}
-
-#section-one .left-arrow,
-#section-one .right-arrow {
-  position: absolute;
-  width: 41px;
-  height: 69px;
-  font-size: 35px;
-  top: 50%;
-  margin-top: -34.5px;
-  color: #757575;
-  opacity: 0.5;
-}
-
-#section-one .left-arrow {
-  left: 234px;
-}
-
-#section-one .right-arrow {
-  right: 0;
-}
-
-#section-one .indicators {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-
-#section-one .indicators li {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  margin-left: 5px;
-}
-
-#section-one .indicators li.active {
-  background: rgba(255, 255, 255, 0.4);
-  border-color: rgba(0, 0, 0, 0.4);
 }
 
 /* 分类导航 */
