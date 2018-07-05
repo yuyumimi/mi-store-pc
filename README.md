@@ -7,4 +7,5 @@
 - 基于 Vue
   - vue-router
   - vue-cli
+  - axios
   - 单文件组件
