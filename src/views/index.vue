@@ -20,10 +20,10 @@
             <img src="../assets/img/xmad_15235208204944_xfguv.jpg" alt="广告图">
           </a>
           <a href="#">
-            <img src="../assets/img\xmad_15211196852594_KeNuO.jpg" alt="广告图">
+            <img src="../assets/img/xmad_15211196852594_KeNuO.jpg" alt="广告图">
           </a>
           <a href="#">
-            <img src="../assets/img\df7c6d47-c09f-49d1-9a9f-df0d2294bec8.jpg" alt="广告图">
+            <img src="../assets/img/df7c6d47-c09f-49d1-9a9f-df0d2294bec8.jpg" alt="广告图">
           </a>
         </footer>
       </section>
