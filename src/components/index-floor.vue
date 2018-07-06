@@ -31,7 +31,8 @@ export default {
     const filter = {
       where: {
         categoryId: this.category.id
-      }
+      },
+      limit:8
     }
     api.get("/product", filter).then(res => {
       this.products = res.data
