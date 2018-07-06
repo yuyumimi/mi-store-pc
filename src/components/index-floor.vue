@@ -28,7 +28,12 @@ export default {
     }
   },
   created() {
-    api.get("/product").then(res => {
+    const filter = {
+      where: {
+        categoryId: this.category.id
+      }
+    }
+    api.get("/product", filter).then(res => {
       this.products = res.data
     })
   },
