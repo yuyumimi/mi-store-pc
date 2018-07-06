@@ -13,8 +13,14 @@ function _getHeaders() {
 }
 
 const apiClient = {
-  get(apiPath) {
-    return axios.get(apiCloud.baseURL + apiPath, {
+  get(apiPath, filter) {
+    let url = apiCloud.baseURL + apiPath
+
+    if (filter) {
+      url += "?filter=" + encodeURIComponent(JSON.stringify(filter))
+    }
+
+    return axios.get(url, {
       headers: _getHeaders()
     })
   }
