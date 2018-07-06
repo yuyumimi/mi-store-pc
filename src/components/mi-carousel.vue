@@ -17,9 +17,7 @@
 
 <script>
 import "../assets/js/jquery-3.3.1.min"
-import SHA1 from "../assets/js/sha1.js"
-import axios from "axios"
-import { apiCloud } from "../app.config"
+import api from "../assets/js/api-client.js"
 
 export default {
   mounted() {
@@ -31,17 +29,8 @@ export default {
       interval: null,
       data: null,
       init() {
-        const now = Date.now()
-        axios
-          .get(apiCloud.baseURL + "/carouselItem", {
-            headers: {
-              "X-APICloud-AppId": apiCloud.appId,
-              "X-APICloud-AppKey":
-                SHA1(apiCloud.appId + "UZ" + apiCloud.appKey + "UZ" + now) +
-                "." +
-                now
-            }
-          })
+        api
+          .get("/carouselItem")
           .then(res => {
             this.data = res.data
             this.data.push(this.data[0])
