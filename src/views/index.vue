@@ -95,103 +95,8 @@
     </div>
     <div id="floors" class="gray-bg">
       <div class="container">
-        <section id="phone">
-          <h3 class="flex">
-            <span class="floor-title">手机</span>
-            <a href="#" class="view-all">查看全部
-              <i class="icon-gengduotianchong iconfont"></i>
-            </a>
-          </h3>
-          <div class="flex floor-body">
-            <a href="#" class="left">
-              <img src="../assets/img/xmad_15242078029661_OTptI.jpg" alt="广告图">
-            </a>
-            <ul class="right">
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1508850965.67096774!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1509723338.05097112!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1511228654.33099308!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1510019402.48089978!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1508125822.19716710!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1512614327.2483640!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1512614327.2483640!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1505733360.02538108!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">红米Note 5A 2GB+16GB</h5>
-                </a>
-                <p class="desc">5.5英寸大屏，超轻薄机身</p>
-                <p class="price">
-                  <span>649</span>
-                  <del>699</del>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <mi-banner :imgUrl="require('../assets/img/xmad_15239327613802_gcLZQ.jpg')" />
-        </section>
+        <index-floor :category="{title:'手机'}" />
+        <mi-banner :imgUrl="require('../assets/img/xmad_15239327613802_gcLZQ.jpg')" />
 
         <section id="home-elec">
           <h3 class="flex">
@@ -542,6 +447,7 @@ import "../assets/css/site_theme.css"
 import "../assets/js/jquery-3.3.1.min"
 import "../assets/js/index.js"
 
+import IndexFloor from "../components/index-floor"
 import MiBanner from "../components/mi-banner"
 import MiCarousel from "../components/mi-carousel"
 import PageHeader from "../components/page-header"
@@ -550,6 +456,7 @@ import TopNavBar from "../components/top-nav-bar"
 
 export default {
   components: {
+    IndexFloor,
     MiCarousel,
     MiBanner,
     PageHeader,
