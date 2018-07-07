@@ -95,7 +95,7 @@
     </div>
     <div id="floors" class="gray-bg">
       <div class="container">
-        <index-floor :category="{title:'手机',id:'5b3df470ce4a7e564c11777d'}" />
+        <index-floor :category="{title:'手机',objectId:'5b3f6dcc9f5454003bf6085b'}" />
         <mi-banner :imgUrl="require('../assets/img/xmad_15239327613802_gcLZQ.jpg')" />
 
         <section id="home-elec">

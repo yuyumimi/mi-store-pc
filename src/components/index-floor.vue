@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import api from "../assets/js/api-client.js"
+import api, { Pointer } from "../assets/js/api-client.js"
 import FloorProductItem from "./floor-product-item"
 
 export default {
@@ -30,11 +30,12 @@ export default {
   created() {
     const filter = {
       where: {
-        categoryId: this.category.id
-      }
+        category: new Pointer("ProductCategory", this.category.objectId)
+      },
+      limit: 8
     }
-    api.get("/product", filter).then(res => {
-      this.products = res.data
+    api.get("/Product", filter).then(res => {
+      this.products = res
     })
   },
   props: ["category", "ads"],

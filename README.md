@@ -17,4 +17,4 @@
   - vue-cli
   - axios
   - 单文件组件
-- 后端基于 apiCloud
+- 后端基于 leanCloud

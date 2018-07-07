@@ -4,10 +4,7 @@
 </template>
 
 <script>
-import SHA1 from "../assets/js/sha1.js"
-import axios from "axios"
-import { apiCloud } from "../app.config"
-
+import api from '../assets/js/api-client.js'
 export default {
   mounted() {
     const nav = {
@@ -17,18 +14,9 @@ export default {
         const now = Date.now()
         this.$elem = $("#site-category")
 
-        axios
-          .get(apiCloud.baseURL + "/indexSideCategory", {
-            headers: {
-              "X-APICloud-AppId": apiCloud.appId,
-              "X-APICloud-AppKey":
-                SHA1(apiCloud.appId + "UZ" + apiCloud.appKey + "UZ" + now) +
-                "." +
-                now
-            }
-          })
+        api.get('/IndexSideCategory')
           .then(res => {
-            this.data = res.data
+            this.data = res
             this.load()
           })
           .catch(err => {
