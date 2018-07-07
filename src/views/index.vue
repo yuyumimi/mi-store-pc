@@ -45,7 +45,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/10c6f6ede2fcfa2ad162d2869a716c14.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/10c6f6ede2fcfa2ad162d2869a716c14.jpg" alt="商品图片">
               <h3 class="product-title">小米MIX 2 全陶瓷尊享版 8GB+128GB 黑色</h3>
               <p class="product-desc">Unibody 全陶瓷</p>
               <p class="price">
@@ -57,7 +57,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/e277547c6e3329303dd2c20a327424c4.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/e277547c6e3329303dd2c20a327424c4.jpg" alt="商品图片">
               <h3 class="product-title">小米AI音箱</h3>
               <p class="product-desc">听音乐、语音遥控家电的人工智能音箱</p>
               <p class="price">
@@ -68,7 +68,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/aeb4f2b6-32a4-81b8-9603-553c69ae9a38.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/aeb4f2b6-32a4-81b8-9603-553c69ae9a38.jpg" alt="商品图片">
               <h3 class="product-title">红米5A 2GB+16GB 铂银灰</h3>
               <p class="product-desc">轻巧长续航</p>
               <p class="price">
@@ -80,7 +80,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/7fe00029-d6c0-a048-5deb-8df1fc86a1b4.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/7fe00029-d6c0-a048-5deb-8df1fc86a1b4.jpg" alt="商品图片">
               <h3 class="product-title">小米WiFi电力猫 白色</h3>
               <p class="product-desc">有插座的地方 就有WiFi</p>
               <p class="price">
@@ -318,20 +318,20 @@
     <div id="fixed_tools" class="flex">
       <div class="flex up">
         <a href="#">
-          <img class="icon" src="img/cc0b8948a88a08f6f3b7cd826e09ace6.png" alt="图标">
+          <img class="icon" src="../assets/img/cc0b8948a88a08f6f3b7cd826e09ace6.png" alt="图标">
         </a>
         <a href="#">
-          <img class="icon" src="img/55cad219421bee03a801775e7309b920.png" alt="图标">
+          <img class="icon" src="../assets/img/55cad219421bee03a801775e7309b920.png" alt="图标">
         </a>
         <a href="#">
-          <img class="icon" src="img/4f036ae4d45002b2a6fb6756cedebf02.png" alt="图标">
+          <img class="icon" src="../assets/img/4f036ae4d45002b2a6fb6756cedebf02.png" alt="图标">
         </a>
         <a href="#">
-          <img class="icon" src="img/d7db56d1d850113f016c95e289e36efa.png" alt="图标">
+          <img class="icon" src="../assets/img/d7db56d1d850113f016c95e289e36efa.png" alt="图标">
         </a>
       </div>
       <a href="#">
-        <img class="icon" src="img/totop.png" alt="图标">
+        <img class="icon" src="../assets/img/totop.png" alt="图标">
       </a>
     </div>
   </div>
