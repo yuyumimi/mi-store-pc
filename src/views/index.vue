@@ -90,35 +90,15 @@
             </li>
           </a>
         </ul>
-        <mi-banner imgUrl="https://i1.mifile.cn/a4/xmad_15248128208806_fjRMy.jpg"></mi-banner>
+        <mi-banner :imgUrl="banners[0]"></mi-banner>
       </section>
     </div>
     <div id="floors" class="gray-bg">
       <div class="container">
-        <index-floor :category="{title:'手机',objectId:'5b3f6dcc9f5454003bf6085b'}" :adImgSrcs="['https://i1.mifile.cn/a4/xmad_15283420365224_wLvZm.jpg']" />
-        <mi-banner :imgUrl="require('../assets/img/xmad_15239327613802_gcLZQ.jpg')" />
-        <index-floor :category="{title:'家电',objectId:'5b40371f67f356003a5f0b67'}" :adImgSrcs="['https://i1.mifile.cn/a4/xmad_15266395374048_JnZQo.jpg','https://i1.mifile.cn/a4/xmad_15123939053142_dFlAw.jpg']" />
-
-        <section id="related">
-          <h3 class="flex">
-            <span class="floor-title">周边</span>
-            <a href="#" class="view-all">查看全部
-              <i class="icon-gengduotianchong iconfont"></i>
-            </a>
-          </h3>
-          <div class="flex floor-body">
-            <ul class="left left-two">
-              <a href="#">
-                <img src="https://i1.mifile.cn/a4/xmad_15145400738686_RiDPQ.jpg" alt="广告图片">
-              </a>
-              <a href="#">
-                <img src="https://i1.mifile.cn/a4/xmad_15162458631619_LTmcI.jpg" alt="广告图片">
-              </a>
-            </ul>
-            <ul class="right">
-            </ul>
-          </div>
-        </section>
+        <template v-for="(floor,index) of floors">
+          <index-floor :category="floor.category" :adImgSrcs="floor.adImgSrcs" :key="index" />
+          <mi-banner v-if="banners[index+1]" :imgUrl="banners[index+1]" :key="index" />
+        </template>
       </div>
     </div>
 
@@ -353,6 +333,59 @@ import SideCategory from "../components/side-category"
 import TopNavBar from "../components/top-nav-bar"
 
 export default {
+  data() {
+    return {
+      floors: [
+        {
+          category: { title: "手机", objectId: "5b3f6dcc9f5454003bf6085b" },
+          adImgSrcs: ["https://i1.mifile.cn/a4/xmad_15283420365224_wLvZm.jpg"]
+        },
+        {
+          category: { title: "家电", objectId: "5b40371f67f356003a5f0b67" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15266395374048_JnZQo.jpg",
+            "https://i1.mifile.cn/a4/xmad_15123939053142_dFlAw.jpg"
+          ]
+        },
+        {
+          category: { title: "智能", objectId: "5b3f6dcc9f5454003bf6085b" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15287211809144_LDIsa.jpg",
+            "https://i1.mifile.cn/a4/xmad_14950995035103_fhWtH.jpg"
+          ]
+        },
+        {
+          category: { title: "搭配", objectId: "5b40371f67f356003a5f0b67" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15277816294188_wikHT.jpg",
+            "https://i1.mifile.cn/a4/xmad_15277814391495_RBqUe.jpg"
+          ]
+        },
+        {
+          category: { title: "配件", objectId: "5b3f6dcc9f5454003bf6085b" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15222058002076_sWEmR.jpg",
+            "https://i1.mifile.cn/a4/xmad_15290668700648_LpwQf.jpg"
+          ]
+        },
+        {
+          category: { title: "周边", objectId: "5b40371f67f356003a5f0b67" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15284596646115_wNMGC.jpg",
+            "https://i1.mifile.cn/a4/xmad_15162458631619_LTmcI.jpg"
+          ]
+        }
+      ],
+      banners: [
+        "https://i1.mifile.cn/a4/xmad_15299774887546_atPHd.jpg",
+        "https://i1.mifile.cn/a4/xmad_15302841772912_KtGTu.jpg",
+        "https://i1.mifile.cn/a4/xmad_15204795762271_ZwaxE.jpg",
+        "https://i1.mifile.cn/a4/xmad_15204799796935_WjnpM.jpg",
+        "https://i1.mifile.cn/a4/xmad_15204798088946_YvzWs.jpg",
+        "https://i1.mifile.cn/a4/xmad_15282822747649_UXhkN.jpg"
+      ]
+    }
+  },
   components: {
     IndexFloor,
     MiCarousel,
