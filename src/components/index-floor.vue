@@ -7,9 +7,13 @@
       </a>
     </h3>
     <div class="flex floor-body">
-      <a href="#" class="left">
-        <img src="../assets/img/xmad_15242078029661_OTptI.jpg" alt="广告图">
+      <a href="#" class="left" v-if="adImgSrcs.length === 1">
+        <img :src="adImgSrcs[0]" alt="广告图">
       </a>
+      <ul class="left left-two" v-if="adImgSrcs.length === 2">
+        <a href=""><img :src="adImgSrcs[0]" alt="广告图片"></a>
+        <a href=""><img :src="adImgSrcs[1]" alt="广告图片"></a>
+      </ul>
       <ul class="right">
         <floor-product-item v-for="p of products" :key="p.id" :title="p.title" :subtitle="p.subtitle" :imgSrc="p.imgSrc" :priceOri="p.priceOri" :priceNow="p.priceNow" />
       </ul>
@@ -38,7 +42,7 @@ export default {
       this.products = res
     })
   },
-  props: ["category", "ads"],
+  props: ["category", "adImgSrcs"],
   components: {
     FloorProductItem
   }

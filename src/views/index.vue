@@ -95,9 +95,9 @@
     </div>
     <div id="floors" class="gray-bg">
       <div class="container">
-        <index-floor :category="{title:'手机',objectId:'5b3f6dcc9f5454003bf6085b'}" />
+        <index-floor :category="{title:'手机',objectId:'5b3f6dcc9f5454003bf6085b'}" :adImgSrcs="['https://i1.mifile.cn/a4/xmad_15283420365224_wLvZm.jpg']" />
         <mi-banner :imgUrl="require('../assets/img/xmad_15239327613802_gcLZQ.jpg')" />
-        <index-floor :category="{title:'家电',objectId:'5b40371f67f356003a5f0b67'}" />
+        <index-floor :category="{title:'家电',objectId:'5b40371f67f356003a5f0b67'}" :adImgSrcs="['https://i1.mifile.cn/a4/xmad_15266395374048_JnZQo.jpg','https://i1.mifile.cn/a4/xmad_15123939053142_dFlAw.jpg']" />
 
         <section id="related">
           <h3 class="flex">
