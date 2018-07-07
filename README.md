@@ -1,8 +1,8 @@
-# mi-store-pc
+# 仿小米商城项目（PC端）
 
-“仿小米商城”项目的 PC 页面
+“仿小米商城”项目的PC端。
 
-项目中包含大量第三方托管的网络资源，运行时请确保你已联网。
+[查看在线演示](http://mi-store-pc.loveitis.cn)
 
 ## 功能要点
 
@@ -13,8 +13,10 @@
 ## 技术要点说明
 
 - 前端基于 Vue
+  - 组件化开发，组件复用
   - vue-router
   - vue-cli
   - axios
   - 单文件组件
-- 后端基于 apiCloud
+
+- 后端基于 LeanCloud 数据存储服务

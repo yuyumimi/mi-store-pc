@@ -45,7 +45,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/10c6f6ede2fcfa2ad162d2869a716c14.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/10c6f6ede2fcfa2ad162d2869a716c14.jpg" alt="商品图片">
               <h3 class="product-title">小米MIX 2 全陶瓷尊享版 8GB+128GB 黑色</h3>
               <p class="product-desc">Unibody 全陶瓷</p>
               <p class="price">
@@ -57,7 +57,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/e277547c6e3329303dd2c20a327424c4.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/e277547c6e3329303dd2c20a327424c4.jpg" alt="商品图片">
               <h3 class="product-title">小米AI音箱</h3>
               <p class="product-desc">听音乐、语音遥控家电的人工智能音箱</p>
               <p class="price">
@@ -68,7 +68,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/aeb4f2b6-32a4-81b8-9603-553c69ae9a38.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/aeb4f2b6-32a4-81b8-9603-553c69ae9a38.jpg" alt="商品图片">
               <h3 class="product-title">红米5A 2GB+16GB 铂银灰</h3>
               <p class="product-desc">轻巧长续航</p>
               <p class="price">
@@ -80,7 +80,7 @@
           <a href="#">
             <div class="bg"></div>
             <li class="product-item">
-              <img class="product-img" src="img/7fe00029-d6c0-a048-5deb-8df1fc86a1b4.jpg" alt="商品图片">
+              <img class="product-img" src="../assets/img/7fe00029-d6c0-a048-5deb-8df1fc86a1b4.jpg" alt="商品图片">
               <h3 class="product-title">小米WiFi电力猫 白色</h3>
               <p class="product-desc">有插座的地方 就有WiFi</p>
               <p class="price">
@@ -90,137 +90,15 @@
             </li>
           </a>
         </ul>
-        <mi-banner imgUrl="https://i1.mifile.cn/a4/xmad_15248128208806_fjRMy.jpg"></mi-banner>
+        <mi-banner :imgUrl="banners[0]"></mi-banner>
       </section>
     </div>
     <div id="floors" class="gray-bg">
       <div class="container">
-        <index-floor :category="{title:'手机',id:'5b3df470ce4a7e564c11777d'}" />
-        <mi-banner :imgUrl="require('../assets/img/xmad_15239327613802_gcLZQ.jpg')" />
-
-        <section id="home-elec">
-          <h3 class="flex">
-            <span class="floor-title">家电</span>
-            <a href="#" class="view-all">查看全部
-              <i class="icon-gengduotianchong iconfont"></i>
-            </a>
-          </h3>
-          <div class="flex floor-body">
-            <ul class="left left-two">
-              <a href="#">
-                <img src="https://i1.mifile.cn/a4/xmad_15232552838083_SWVqL.jpg" alt="广告图片">
-              </a>
-              <a href="#">
-                <img src="https://i1.mifile.cn/a4/xmad_15123939053142_dFlAw.jpg" alt="广告图片">
-              </a>
-            </ul>
-            <ul class="right">
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1519959193.42473450!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米电视4A 40英寸</h5>
-                </a>
-                <p class="desc">FHD全高清屏 / 人工智能语音系统</p>
-                <p class="price">
-                  <span>1399</span>
-                  <del>1599</del>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1516011154.79573723!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米电视4A 50英寸</h5>
-                </a>
-                <p class="desc">人工智能语音系统 / 蓝牙语音遥控器</p>
-                <p class="price">
-                  <span>2199</span>
-                  <del>2399</del>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1496997930.13622399!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">13.3"小米笔记本Air i5 8G 256G MX150 银色</h5>
-                </a>
-                <p class="desc">全金属超薄机身搭配独显</p>
-                <p class="price">
-                  <span>5199</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1505897517.20426731!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">15.6"小米笔记本Pro i7 16G MX150 深空灰</h5>
-                </a>
-                <p class="desc">性能更强悍的专业笔记本</p>
-                <p class="price">
-                  <span>6999</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/xmad_14972549116226_tZpod.png" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">米家空气净化器Pro</h5>
-                </a>
-                <p class="desc">OLED 显示屏幕 / 激光颗粒物传感器</p>
-                <p class="price">
-                  <span>1499</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1504498936.11861982!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">米家电水壶</h5>
-                </a>
-                <p class="desc">一杯水，是一家人的安心</p>
-                <p class="price">
-                  <span>99</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1510020567.64467830!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米米家空气净化器 2S</h5>
-                </a>
-                <p class="desc">OLED显示屏 / 激光颗粒物传感器</p>
-                <p class="price">
-                  <span>899</span>
-                </p>
-              </li>
-              <li class="floor-cell">
-                <img class="img" src="img/pms_1510019402.48089978!220x220.jpg" alt="手机图片">
-                <a href="#">
-                  <h5 class="title">小米6 4GB+64GB</h5>
-                </a>
-                <p class="desc">变焦双摄，4 轴防抖，骁龙835 处理器</p>
-                <p class="price">
-                  <span>2299</span>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <mi-banner imgUrl="https://i1.mifile.cn/a4/xmad_1523959475917_XyzOq.jpg" />
-        </section>
-        <section id="related">
-          <h3 class="flex">
-            <span class="floor-title">周边</span>
-            <a href="#" class="view-all">查看全部
-              <i class="icon-gengduotianchong iconfont"></i>
-            </a>
-          </h3>
-          <div class="flex floor-body">
-            <ul class="left left-two">
-              <a href="#">
-                <img src="https://i1.mifile.cn/a4/xmad_15145400738686_RiDPQ.jpg" alt="广告图片">
-              </a>
-              <a href="#">
-                <img src="https://i1.mifile.cn/a4/xmad_15162458631619_LTmcI.jpg" alt="广告图片">
-              </a>
-            </ul>
-            <ul class="right">
-            </ul>
-          </div>
-        </section>
+        <template v-for="(floor,index) of floors">
+          <index-floor :category="floor.category" :adImgSrcs="floor.adImgSrcs" :key="index" />
+          <mi-banner v-if="banners[index+1]" :imgUrl="banners[index+1]" :key="index" />
+        </template>
       </div>
     </div>
 
@@ -420,22 +298,23 @@
     <div id="fixed_tools" class="flex">
       <div class="flex up">
         <a href="#">
-          <img class="icon" src="img/cc0b8948a88a08f6f3b7cd826e09ace6.png" alt="图标">
+          <img class="icon" src="../assets/img/cc0b8948a88a08f6f3b7cd826e09ace6.png" alt="图标">
         </a>
         <a href="#">
-          <img class="icon" src="img/55cad219421bee03a801775e7309b920.png" alt="图标">
+          <img class="icon" src="../assets/img/55cad219421bee03a801775e7309b920.png" alt="图标">
         </a>
         <a href="#">
-          <img class="icon" src="img/4f036ae4d45002b2a6fb6756cedebf02.png" alt="图标">
+          <img class="icon" src="../assets/img/4f036ae4d45002b2a6fb6756cedebf02.png" alt="图标">
         </a>
         <a href="#">
-          <img class="icon" src="img/d7db56d1d850113f016c95e289e36efa.png" alt="图标">
+          <img class="icon" src="../assets/img/d7db56d1d850113f016c95e289e36efa.png" alt="图标">
         </a>
       </div>
       <a href="#">
-        <img class="icon" src="img/totop.png" alt="图标">
+        <img class="icon" src="../assets/img/totop.png" alt="图标">
       </a>
     </div>
+    <project-fixed-bar />
   </div>
 </template>
 
@@ -451,15 +330,70 @@ import IndexFloor from "../components/index-floor"
 import MiBanner from "../components/mi-banner"
 import MiCarousel from "../components/mi-carousel"
 import PageHeader from "../components/page-header"
+import ProjectFixedBar from "../components/project-fixed-bar"
 import SideCategory from "../components/side-category"
 import TopNavBar from "../components/top-nav-bar"
 
 export default {
+  data() {
+    return {
+      floors: [
+        {
+          category: { title: "手机", objectId: "5b3f6dcc9f5454003bf6085b" },
+          adImgSrcs: ["https://i1.mifile.cn/a4/xmad_15283420365224_wLvZm.jpg"]
+        },
+        {
+          category: { title: "家电", objectId: "5b40371f67f356003a5f0b67" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15266395374048_JnZQo.jpg",
+            "https://i1.mifile.cn/a4/xmad_15123939053142_dFlAw.jpg"
+          ]
+        },
+        {
+          category: { title: "智能", objectId: "5b3f6dcc9f5454003bf6085b" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15287211809144_LDIsa.jpg",
+            "https://i1.mifile.cn/a4/xmad_14950995035103_fhWtH.jpg"
+          ]
+        },
+        {
+          category: { title: "搭配", objectId: "5b40371f67f356003a5f0b67" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15277816294188_wikHT.jpg",
+            "https://i1.mifile.cn/a4/xmad_15277814391495_RBqUe.jpg"
+          ]
+        },
+        {
+          category: { title: "配件", objectId: "5b3f6dcc9f5454003bf6085b" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15222058002076_sWEmR.jpg",
+            "https://i1.mifile.cn/a4/xmad_15290668700648_LpwQf.jpg"
+          ]
+        },
+        {
+          category: { title: "周边", objectId: "5b40371f67f356003a5f0b67" },
+          adImgSrcs: [
+            "https://i1.mifile.cn/a4/xmad_15284596646115_wNMGC.jpg",
+            "https://i1.mifile.cn/a4/xmad_15162458631619_LTmcI.jpg"
+          ]
+        }
+      ],
+      banners: [
+        "https://i1.mifile.cn/a4/xmad_15299774887546_atPHd.jpg",
+        "https://i1.mifile.cn/a4/xmad_15302841772912_KtGTu.jpg",
+        "https://i1.mifile.cn/a4/xmad_15204795762271_ZwaxE.jpg",
+        "https://i1.mifile.cn/a4/xmad_15204799796935_WjnpM.jpg",
+        "https://i1.mifile.cn/a4/xmad_15204798088946_YvzWs.jpg",
+        "https://i1.mifile.cn/a4/xmad_15282822747649_UXhkN.jpg"
+      ]
+    }
+  },
   components: {
     IndexFloor,
     MiCarousel,
     MiBanner,
     PageHeader,
+    ProjectFixedBar,
     SideCategory,
     TopNavBar
   }

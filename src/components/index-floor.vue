@@ -7,9 +7,13 @@
       </a>
     </h3>
     <div class="flex floor-body">
-      <a href="#" class="left">
-        <img src="../assets/img/xmad_15242078029661_OTptI.jpg" alt="广告图">
+      <a href="#" class="left" v-if="adImgSrcs.length === 1">
+        <img :src="adImgSrcs[0]" alt="广告图">
       </a>
+      <ul class="left left-two" v-if="adImgSrcs.length === 2">
+        <a href=""><img :src="adImgSrcs[0]" alt="广告图片"></a>
+        <a href=""><img :src="adImgSrcs[1]" alt="广告图片"></a>
+      </ul>
       <ul class="right">
         <floor-product-item v-for="p of products" :key="p.id" :title="p.title" :subtitle="p.subtitle" :imgSrc="p.imgSrc" :priceOri="p.priceOri" :priceNow="p.priceNow" />
       </ul>
@@ -18,7 +22,7 @@
 </template>
 
 <script>
-import api from "../assets/js/api-client.js"
+import api, { Pointer } from "../assets/js/api-client.js"
 import FloorProductItem from "./floor-product-item"
 
 export default {
@@ -30,15 +34,15 @@ export default {
   created() {
     const filter = {
       where: {
-        categoryId: this.category.id
+        category: new Pointer("ProductCategory", this.category.objectId)
       },
-      limit:8
+      limit: 8
     }
-    api.get("/product", filter).then(res => {
-      this.products = res.data
+    api.get("/Product", filter).then(res => {
+      this.products = res
     })
   },
-  props: ["category", "ads"],
+  props: ["category", "adImgSrcs"],
   components: {
     FloorProductItem
   }

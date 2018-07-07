@@ -30,9 +30,9 @@ export default {
       data: null,
       init() {
         api
-          .get("/carouselItem")
+          .get("/IndexCarouselItem")
           .then(res => {
-            this.data = res.data
+            this.data = res
             this.data.push(this.data[0])
             this.load()
           })
@@ -93,7 +93,7 @@ export default {
         for (const carousel of carousels) {
           $carouselImgContainer.css("width", carousels.length * 1226)
           $("<img>")
-            .attr("src", carousel.imgUrl)
+            .attr("src", carousel.imgSrc)
             .appendTo($carouselImgContainer)
 
           $indicators.push($("<li>"))
