@@ -14,6 +14,9 @@
   position: fixed;
   right: 10px;
   top: 300px;
+  padding: 10px;
+  background-color: rgba(200, 200, 200, .5);
+  border-radius: 5px;
 }
 
 .group {
