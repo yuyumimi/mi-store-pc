@@ -27,71 +27,8 @@
           </a>
         </footer>
       </section>
-      <section id="flash-purchase">
-        <h2>小米闪购</h2>
-        <ul class="boxes flex">
-          <li class="counter">
-            <h3 class="title">20:00 场</h3>
-            <img src="https://i1.mifile.cn/f/i/2018/mihome/flashpurchase.png" alt="闪电图标">
-            <p>距离开始还有</p>
-            <div class="timer flex">
-              <span class="hour">00</span>
-              <span>:</span>
-              <span class="min">24</span>
-              <span>:</span>
-              <span class="sec">45</span>
-            </div>
-          </li>
-          <a href="#">
-            <div class="bg"></div>
-            <li class="product-item">
-              <img class="product-img" src="../assets/img/10c6f6ede2fcfa2ad162d2869a716c14.jpg" alt="商品图片">
-              <h3 class="product-title">小米MIX 2 全陶瓷尊享版 8GB+128GB 黑色</h3>
-              <p class="product-desc">Unibody 全陶瓷</p>
-              <p class="price">
-                <span>3699</span>
-                <del>4699</del>
-              </p>
-            </li>
-          </a>
-          <a href="#">
-            <div class="bg"></div>
-            <li class="product-item">
-              <img class="product-img" src="../assets/img/e277547c6e3329303dd2c20a327424c4.jpg" alt="商品图片">
-              <h3 class="product-title">小米AI音箱</h3>
-              <p class="product-desc">听音乐、语音遥控家电的人工智能音箱</p>
-              <p class="price">
-                <span>299</span>
-              </p>
-            </li>
-          </a>
-          <a href="#">
-            <div class="bg"></div>
-            <li class="product-item">
-              <img class="product-img" src="../assets/img/aeb4f2b6-32a4-81b8-9603-553c69ae9a38.jpg" alt="商品图片">
-              <h3 class="product-title">红米5A 2GB+16GB 铂银灰</h3>
-              <p class="product-desc">轻巧长续航</p>
-              <p class="price">
-                <span>569</span>
-                <del>599</del>
-              </p>
-            </li>
-          </a>
-          <a href="#">
-            <div class="bg"></div>
-            <li class="product-item">
-              <img class="product-img" src="../assets/img/7fe00029-d6c0-a048-5deb-8df1fc86a1b4.jpg" alt="商品图片">
-              <h3 class="product-title">小米WiFi电力猫 白色</h3>
-              <p class="product-desc">有插座的地方 就有WiFi</p>
-              <p class="price">
-                <span>209</span>
-                <del>249</del>
-              </p>
-            </li>
-          </a>
-        </ul>
-        <mi-banner :imgUrl="banners[0]"></mi-banner>
-      </section>
+      <index-flash-purchase />
+      <mi-banner :imgUrl="banners[0]"></mi-banner>
     </div>
     <div id="floors" class="gray-bg">
       <div class="container">
@@ -324,8 +261,8 @@ import "../assets/css/reset.css"
 import "../assets/css/site_theme.css"
 
 import "../assets/js/jquery-3.3.1.min"
-import "../assets/js/index.js"
 
+import IndexFlashPurchase from '../components/index/index-flash-purchase'
 import IndexFloor from "../components/index-floor"
 import MiBanner from "../components/mi-banner"
 import MiCarousel from "../components/mi-carousel"
@@ -389,6 +326,7 @@ export default {
     }
   },
   components: {
+    IndexFlashPurchase,
     IndexFloor,
     MiCarousel,
     MiBanner,
