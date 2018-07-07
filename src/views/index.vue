@@ -96,7 +96,7 @@
     <div id="floors" class="gray-bg">
       <div class="container">
         <template v-for="(floor,index) of floors">
-          <index-floor :category="floor.category" :adImgSrcs="floor.adImgSrcs" :key="index" />
+          <index-floor :category="floor.category" :adImgSrcs="floor.adImgSrcs" :key="floor.category.objectId" />
           <mi-banner v-if="banners[index+1]" :imgUrl="banners[index+1]" :key="index" />
         </template>
       </div>
@@ -350,28 +350,28 @@ export default {
           ]
         },
         {
-          category: { title: "智能", objectId: "5b3f6dcc9f5454003bf6085b" },
+          category: { title: "智能", objectId: "5b4048582f301e003427b642" },
           adImgSrcs: [
             "https://i1.mifile.cn/a4/xmad_15287211809144_LDIsa.jpg",
             "https://i1.mifile.cn/a4/xmad_14950995035103_fhWtH.jpg"
           ]
         },
         {
-          category: { title: "搭配", objectId: "5b40371f67f356003a5f0b67" },
+          category: { title: "搭配", objectId: "5b4048629f545400311ce1d5" },
           adImgSrcs: [
             "https://i1.mifile.cn/a4/xmad_15277816294188_wikHT.jpg",
             "https://i1.mifile.cn/a4/xmad_15277814391495_RBqUe.jpg"
           ]
         },
         {
-          category: { title: "配件", objectId: "5b3f6dcc9f5454003bf6085b" },
+          category: { title: "配件", objectId: "5b40486cfe88c20035e14043" },
           adImgSrcs: [
             "https://i1.mifile.cn/a4/xmad_15222058002076_sWEmR.jpg",
             "https://i1.mifile.cn/a4/xmad_15290668700648_LpwQf.jpg"
           ]
         },
         {
-          category: { title: "周边", objectId: "5b40371f67f356003a5f0b67" },
+          category: { title: "周边", objectId: "5b40487667f356003a5fb94a" },
           adImgSrcs: [
             "https://i1.mifile.cn/a4/xmad_15284596646115_wNMGC.jpg",
             "https://i1.mifile.cn/a4/xmad_15162458631619_LTmcI.jpg"
