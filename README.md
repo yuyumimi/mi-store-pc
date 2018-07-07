@@ -1,6 +1,8 @@
-# mi-store-pc
+# 仿小米商城项目（PC端）
 
-“仿小米商城”项目的 PC 页面
+“仿小米商城”项目的PC端。
+
+[查看在线演示](http://mi-store-pc.loveitis.cn)
 
 ## 功能要点
 
