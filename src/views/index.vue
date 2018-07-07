@@ -314,6 +314,7 @@
         <img class="icon" src="../assets/img/totop.png" alt="图标">
       </a>
     </div>
+    <project-fixed-bar />
   </div>
 </template>
 
@@ -329,6 +330,7 @@ import IndexFloor from "../components/index-floor"
 import MiBanner from "../components/mi-banner"
 import MiCarousel from "../components/mi-carousel"
 import PageHeader from "../components/page-header"
+import ProjectFixedBar from "../components/project-fixed-bar"
 import SideCategory from "../components/side-category"
 import TopNavBar from "../components/top-nav-bar"
 
@@ -391,6 +393,7 @@ export default {
     MiCarousel,
     MiBanner,
     PageHeader,
+    ProjectFixedBar,
     SideCategory,
     TopNavBar
   }
